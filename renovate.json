@@ -86,9 +86,7 @@
       "matchPackagePrefixes": [
         "ghcr.io/edgelesssys/constellation/"
       ],
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(-(?<prerelease>.*))?$",
-      "automerge": true,
-      "ignoreUnstable": false,
+      "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(-(?<build>.*))?$",
       "groupName": "Constellation containers"
     },
     {
