@@ -134,8 +134,9 @@
         "(^|\\/)versions.go$"
       ],
       "matchStrings": [
-        " \"https:\\/\\/github\\.com\\/(?<depName>[^\\/\\s\"]+\\/[^\\/\\s\"]+)\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)(?=\\/[^\"]+\"[^\\n]+\\/\\/ renovate:crictl-release)"
+        " \"https:\\/\\/github\\.com\\/kubernetes-sigs\\/cri-tools\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)\\/[^\"]+\""
       ],
+      "depNameTemplate": "kubernetes-sigs/cri-tools",
       "datasourceTemplate": "github-releases",
       "autoReplaceStringTemplate": " \"https://github.com/kubernetes-sigs/cri-tools/releases/download/{{{newValue}}}/crictl-{{{newValue}}}-linux-amd64.tar.gz\""
     },
@@ -144,8 +145,9 @@
         "(^|\\/)versions.go$"
       ],
       "matchStrings": [
-        " \"https:\\/\\/github\\.com\\/(?<depName>[^\\/\\s\"]+\\/[^\\/\\s\"]+)\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)(?=\\/[^\"]+\"[^\\n]+\\/\\/ renovate:cni-plugins-release)"
+        " \"https:\\/\\/github\\.com\\/containernetworking\\/plugins\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)\\/[^\"]+\""
       ],
+      "depNameTemplate": "containernetworking/plugins",
       "datasourceTemplate": "github-releases",
       "autoReplaceStringTemplate": " \"https://github.com/containernetworking/plugins/releases/download/{{{newValue}}}/cni-plugins-linux-amd64-{{{newValue}}}.tgz\""
     }
