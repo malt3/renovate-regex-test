@@ -72,13 +72,31 @@
         "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager",
         "k8s.gcr.io/autoscaling/cluster-autoscaler"
       ],
-      "versioning": "regex:^(?<compatibility>v\\d+\\.\\d+\\.)(?<major>\\d+)$"
+      "versioning": "regex:^(?<compatibility>v\\d+\\.\\d+\\.)(?<major>\\d+)$",
+      "groupName": "K8s version constrained containers"
     },
     {
       "matchPackageNames": [
         "ghcr.io/edgelesssys/cloud-provider-gcp"
       ],
-      "versioning": "regex:^(?<compatibility>v\\d+\\.)(?<major>\\d+)\\.(?<minor>\\d+)$"
+      "versioning": "regex:^(?<compatibility>v\\d+\\.)(?<major>\\d+)\\.(?<minor>\\d+)$",
+      "groupName": "K8s version constrained containers (missing v1 prefix)"
+    },
+    {
+      "matchPackagePrefixes": [
+        "ghcr.io/edgelesssys/constellation/"
+      ],
+      "versioning": "semver",
+      "automerge": true,
+      "groupName": "Constellation containers"
+    },
+    {
+      "matchPackageNames": [
+        "us.gcr.io/k8s-artifacts-prod/kas-network-proxy/proxy-agent",
+        "registry.k8s.io/kas-network-proxy/proxy-server"
+      ],
+      "versioning": "semver",
+      "groupName": "K8s version independent containers"
     }
   ],
   "regexManagers": [
@@ -89,8 +107,7 @@
       "matchStrings": [
         " \"(?<depName>[^\"]*?):(?<currentValue>[^\"]*?)@(?<currentDigest>sha256:[a-f0-9]+)\"[^\\n]+\\/\\/ renovate:container"
       ],
-      "datasourceTemplate": "docker",
-      "versioningTemplate": "regex"
+      "datasourceTemplate": "docker"
     }
   ]
 }
