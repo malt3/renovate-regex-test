@@ -73,14 +73,14 @@
         "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager",
         "k8s.gcr.io/autoscaling/cluster-autoscaler"
       ],
-      "versioning": "regex:^(?<compatibility>v?\\d+\\.\\d+\\.)(?<major>\\d+)$",
+      "versioning": "regex:^(?<compatibility>v?\\d+\\.\\d+\\.)(?<patch>\\d+)$",
       "groupName": "K8s constrained versions"
     },
     {
       "matchPackageNames": [
         "ghcr.io/edgelesssys/cloud-provider-gcp"
       ],
-      "versioning": "regex:^(?<compatibility>v\\d+\\.)(?<major>\\d+)\\.(?<minor>\\d+)$",
+      "versioning": "regex:^(?<compatibility>v\\d+\\.)(?<minor>\\d+)\\.(?<patch>\\d+)$",
       "groupName": "K8s version constrained containers (missing v1 prefix)"
     },
     {
@@ -97,7 +97,7 @@
       ],
       "versioning": "semver",
       "groupName": "K8s version independent containers"
-    },
+    }
   ],
   "regexManagers": [
     {
