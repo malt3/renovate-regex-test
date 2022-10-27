@@ -83,8 +83,8 @@ var (
 var VersionConfigs = map[ValidK8sVersion]KubernetesVersion{
 	V1_23: {
 		PatchVersion:  "1.23.0",                                                                                                     // renovate:kubernetes-release
-		CNIPluginsURL: "https://github.com/containernetworking/plugins/releases/download/v1.1.0/cni-plugins-linux-amd64-v1.1.1.tgz", // renovate:github-release
-		CrictlURL:     "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.24.0/crictl-v1.24.1-linux-amd64.tar.gz",   // renovate:github-release
+		CNIPluginsURL: "https://github.com/containernetworking/plugins/releases/download/v1.1.0/cni-plugins-linux-amd64-v1.1.1.tgz", // renovate:cni-plugins-release
+		CrictlURL:     "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.24.0/crictl-v1.24.1-linux-amd64.tar.gz",   // renovate:crictl-release
 		KubeletURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.23.1/bin/linux/amd64/kubelet",                  // renovate:kubernetes-release
 		KubeadmURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.23.1/bin/linux/amd64/kubeadm",                  // renovate:kubernetes-release
 		KubectlURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.23.1/bin/linux/amd64/kubectl",                  // renovate:kubernetes-release
@@ -102,8 +102,8 @@ var VersionConfigs = map[ValidK8sVersion]KubernetesVersion{
 	},
 	V1_24: {
 		PatchVersion:  "1.24.3",                                                                                                     // renovate:kubernetes-release
-		CNIPluginsURL: "https://github.com/containernetworking/plugins/releases/download/v1.0.1/cni-plugins-linux-amd64-v1.1.1.tgz", // renovate:github-release
-		CrictlURL:     "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.22.2/crictl-v1.24.2-linux-amd64.tar.gz",   // renovate:github-release
+		CNIPluginsURL: "https://github.com/containernetworking/plugins/releases/download/v1.0.1/cni-plugins-linux-amd64-v1.1.1.tgz", // renovate:cni-plugins-release
+		CrictlURL:     "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.22.2/crictl-v1.24.2-linux-amd64.tar.gz",   // renovate:crictl-release
 		KubeletURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.24.5/bin/linux/amd64/kubelet",                  // renovate:kubernetes-release
 		KubeadmURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.24.5/bin/linux/amd64/kubeadm",                  // renovate:kubernetes-release
 		KubectlURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.24.5/bin/linux/amd64/kubectl",                  // renovate:kubernetes-release
@@ -121,8 +121,8 @@ var VersionConfigs = map[ValidK8sVersion]KubernetesVersion{
 	},
 	V1_25: {
 		PatchVersion:  "1.25.0",                                                                                                     // renovate:kubernetes-release
-		CNIPluginsURL: "https://github.com/containernetworking/plugins/releases/download/v1.1.1/cni-plugins-linux-amd64-v1.1.1.tgz", // renovate:github-release
-		CrictlURL:     "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.25.0/crictl-v1.25.0-linux-amd64.tar.gz",   // renovate:github-release
+		CNIPluginsURL: "https://github.com/containernetworking/plugins/releases/download/v1.1.1/cni-plugins-linux-amd64-v1.1.1.tgz", // renovate:cni-plugins-release
+		CrictlURL:     "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.25.0/crictl-v1.25.0-linux-amd64.tar.gz",   // renovate:crictl-release
 		KubeletURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.25.1/bin/linux/amd64/kubelet",                  // renovate:kubernetes-release
 		KubeadmURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.25.1/bin/linux/amd64/kubeadm",                  // renovate:kubernetes-release
 		KubectlURL:    "https://storage.googleapis.com/kubernetes-release/release/v1.25.1/bin/linux/amd64/kubectl",                  // renovate:kubernetes-release
