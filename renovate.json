@@ -64,6 +64,33 @@
         "github-actions"
       ],
       "groupName": "github actions dependencies"
+    },
+    {
+      "matchPackageNames": [
+        "registry.k8s.io/provider-aws/cloud-controller-manager",
+        "mcr.microsoft.com/oss/kubernetes/azure-cloud-controller-manager",
+        "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager",
+        "k8s.gcr.io/autoscaling/cluster-autoscaler"
+      ],
+      "versioning": "regex:^(?<compatibility>v\\d+\\.\\d+\\.)(?<major>\\d+)$"
+    },
+    {
+      "matchPackageNames": [
+        "ghcr.io/edgelesssys/cloud-provider-gcp"
+      ],
+      "versioning": "regex:^(?<compatibility>v\\d+\\.)(?<major>\\d+)\\.(?<minor>\\d+)$"
+    }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": [
+        "^versions.go$"
+      ],
+      "matchStrings": [
+        " \"(?<depName>[^\"]*?):(?<currentValue>[^\"]*?)@(?<currentDigest>sha256:[a-f0-9]+)\"[^\\n]+\\/\\/ renovate:container"
+      ],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "regex"
     }
   ]
 }
