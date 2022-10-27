@@ -1,0 +1,69 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",
+    "helpers:pinGitHubActionDigests",
+    ":separateMajorReleases"
+  ],
+  "addLabels": [
+    "dependencies"
+  ],
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths"
+  ],
+  "prConcurrentLimit": 4,
+  "ignorePaths": [
+    "cli/internal/helm/charts/cilium/**"
+  ],
+  "ignoreDeps": [
+    "github.com/edgelesssys/constellation/v2"
+  ],
+  "packageRules": [
+    {
+      "matchPackagePatterns": [
+        "^k8s.io",
+        "^sigs.k8s.io"
+      ],
+      "groupName": "k8s dependencies"
+    },
+    {
+      "matchPackagePatterns": [
+        "^go.etcd.io/etcd"
+      ],
+      "groupName": "etcd dependencies"
+    },
+    {
+      "matchPackagePatterns": [
+        "^github.com/aws/aws-sdk-go-v2"
+      ],
+      "groupName": "AWS SDK"
+    },
+    {
+      "matchPackagePatterns": [
+        "^github.com/Azure/",
+        "^github.com/AzureAD/microsoft-authentication-library-for-go"
+      ],
+      "groupName": "Azure SDK"
+    },
+    {
+      "matchPackagePatterns": [
+        "^cloud.google.com/go"
+      ],
+      "groupName": "Google cloud SDK"
+    },
+    {
+      "matchDatasources": [
+        "golang-version"
+      ],
+      "allowedVersions": "1.18"
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "groupName": "github actions dependencies"
+    }
+  ]
+}
