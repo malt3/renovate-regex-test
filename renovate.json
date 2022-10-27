@@ -115,7 +115,7 @@
       ],
       "matchStrings": [
         " \"https:\\/\\/storage\\.googleapis\\.com\\/kubernetes-release\\/release\\/(?<currentValue>[^\\/\\s\"]+)\\/[^\"]+\"[^\\n]+\\/\\/ renovate:kubernetes-release",
-        " \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\"[^\\n]+\\/\\/ renovate:kubernetes-release"
+        " \"(?<currentValue>v\\d+\\.\\d+\\.\\d+)\"[^\\n]+\\/\\/ renovate:kubernetes-release"
       ],
       "depNameTemplate": "kubernetes/kubernetes",
       "datasourceTemplate": "github-releases"
@@ -134,20 +134,20 @@
         "(^|\\/)versions.go$"
       ],
       "matchStrings": [
-        " \"https:\\/\\/github\\.com\\/(?<depName>[^\\/\\s\"]+\\/[^\\/\\s\"]+)\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)\\/[^\"]+\"[^\\n]+\\/\\/ renovate:crictl-release"
+        " \"https:\\/\\/github\\.com\\/(?<depName>[^\\/\\s\"]+\\/[^\\/\\s\"]+)\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)(?<append>\\/[^\"]+\"[^\\n]+\\/\\/ renovate:crictl-release)"
       ],
       "datasourceTemplate": "github-releases",
-      "autoReplaceStringTemplate": " \"https://github.com/kubernetes-sigs/cri-tools/releases/download/{{{newValue}}}/crictl-{{{newValue}}}-linux-amd64.tar.gz\" // renovate:crictl-release"
+      "autoReplaceStringTemplate": " \"https://github.com/kubernetes-sigs/cri-tools/releases/download/{{{newValue}}}/crictl-{{{newValue}}}-linux-amd64.tar.gz\"{{{append}}}"
     },
     {
       "fileMatch": [
         "(^|\\/)versions.go$"
       ],
       "matchStrings": [
-        " \"https:\\/\\/github\\.com\\/(?<depName>[^\\/\\s\"]+\\/[^\\/\\s\"]+)\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)\\/[^\"]+\"[^\\n]+\\/\\/ renovate:cni-plugins-release"
+        " \"https:\\/\\/github\\.com\\/(?<depName>[^\\/\\s\"]+\\/[^\\/\\s\"]+)\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)(?<append>\\/[^\"]+\"[^\\n]+\\/\\/ renovate:cni-plugins-release)"
       ],
       "datasourceTemplate": "github-releases",
-      "autoReplaceStringTemplate": " \"https://github.com/containernetworking/plugins/releases/download/{{{newValue}}}/cni-plugins-linux-amd64-{{{newValue}}}.tgz\" // renovate:cni-plugins-release"
+      "autoReplaceStringTemplate": " \"https://github.com/containernetworking/plugins/releases/download/{{{newValue}}}/cni-plugins-linux-amd64-{{{newValue}}}.tgz\"{{{append}}}"
     }
   ]
 }
