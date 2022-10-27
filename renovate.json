@@ -144,7 +144,7 @@
         "(^|\\/)versions.go$"
       ],
       "matchStrings": [
-        " \"https:\\/\\/github\\.com\\/(?<depName>[^\\/\\s\"]+\\/[^\\/\\s\"]+)\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)\\/[^\"]+\"[^\\n]+\\/\\/ renovate:crictl-release"
+        " \"https:\\/\\/github\\.com\\/(?<depName>[^\\/\\s\"]+\\/[^\\/\\s\"]+)\\/releases\\/download\\/(?<currentValue>[^\\/\\s\"]+)\\/[^\"]+\"[^\\n]+\\/\\/ renovate:cni-plugins-release"
       ],
       "datasourceTemplate": "github-releases",
       "autoReplaceStringTemplate": " \"https://github.com/containernetworking/plugins/releases/download/{{{newValue}}}/cni-plugins-linux-amd64-{{{newValue}}}.tgz\" // renovate:cni-plugins-release"
