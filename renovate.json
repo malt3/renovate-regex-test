@@ -26,7 +26,7 @@
         "^k8s.io",
         "^sigs.k8s.io"
       ],
-      "groupName": "k8s dependencies"
+      "groupName": "K8s dependencies"
     },
     {
       "matchPackagePatterns": [
@@ -51,19 +51,41 @@
       "matchPackagePatterns": [
         "^cloud.google.com/go"
       ],
-      "groupName": "Google cloud SDK"
+      "groupName": "Google SDK"
+    },
+    {
+      "matchPackagePatterns": [
+        "^libvirt.org/go"
+      ],
+      "groupName": "libvirt.org/go"
     },
     {
       "matchDatasources": [
         "golang-version"
       ],
-      "allowedVersions": "1.18"
+      "allowedVersions": "1.19"
+    },
+    {
+      "matchManagers": [
+        "pip_requirements"
+      ],
+      "groupName": "Python dependencies"
     },
     {
       "matchManagers": [
         "github-actions"
       ],
-      "groupName": "github actions dependencies"
+      "groupName": "GitHub action dependencies",
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump"
+      ]
     },
     {
       "matchPackageNames": [
