@@ -106,6 +106,13 @@
       "groupName": "K8s version constrained containers (missing v1 prefix)"
     },
     {
+      "matchPackagePrefixes": [
+        "ghcr.io/edgelesssys/constellation/"
+      ],
+      "versioning": "semver",
+      "groupName": "Constellation containers"
+    },
+    {
       "matchPackageNames": [
         "us.gcr.io/k8s-artifacts-prod/kas-network-proxy/proxy-agent",
         "registry.k8s.io/kas-network-proxy/proxy-server"
