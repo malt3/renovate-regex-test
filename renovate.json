@@ -6,6 +6,7 @@
     "helpers:pinGitHubActionDigests",
     ":separateMajorReleases"
   ],
+  "commitMessagePrefix": "deps:",
   "addLabels": [
     "dependencies"
   ],
