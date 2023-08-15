@@ -107,7 +107,7 @@ var VersionConfigs = map[ValidK8sVersion]KubernetesVersion{
 			Hash: "sha256:b275772da4026d2161bf8a8b41ed4786754c8a93ebfb6564006d5da7f23831e5",
 		},
 		Crictl: ArtifactVersion{
-			URL:  "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.25.0/crictl-v1.25.0-linux-amd64.tar.gz", // renovate:crictl-release
+			URL:  "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.28.0/crictl-v1.28.0-linux-amd64.tar.gz", // renovate:crictl-release
 			Hash: "sha256:86ab210c007f521ac4cdcbcf0ae3fb2e10923e65f16de83e0e1db191a07f0235",
 		},
 		Kubelet: ArtifactVersion{
@@ -141,7 +141,7 @@ var VersionConfigs = map[ValidK8sVersion]KubernetesVersion{
 			Hash: "sha256:b275772da4026d2161bf8a8b41ed4786754c8a93ebfb6564006d5da7f23831e5",
 		},
 		Crictl: ArtifactVersion{
-			URL:  "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.25.0/crictl-v1.25.0-linux-amd64.tar.gz", // renovate:crictl-release
+			URL:  "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.28.0/crictl-v1.28.0-linux-amd64.tar.gz", // renovate:crictl-release
 			Hash: "sha256:86ab210c007f521ac4cdcbcf0ae3fb2e10923e65f16de83e0e1db191a07f0235",
 		},
 		Kubelet: ArtifactVersion{
@@ -175,7 +175,7 @@ var VersionConfigs = map[ValidK8sVersion]KubernetesVersion{
 			Hash: "sha256:b275772da4026d2161bf8a8b41ed4786754c8a93ebfb6564006d5da7f23831e5",
 		},
 		Crictl: ArtifactVersion{
-			URL:  "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.25.0/crictl-v1.25.0-linux-amd64.tar.gz", // renovate:crictl-release
+			URL:  "https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.28.0/crictl-v1.28.0-linux-amd64.tar.gz", // renovate:crictl-release
 			Hash: "sha256:86ab210c007f521ac4cdcbcf0ae3fb2e10923e65f16de83e0e1db191a07f0235",
 		},
 		Kubelet: ArtifactVersion{
