@@ -46,6 +46,7 @@
         "patch"
       ],
       "enabled": true,
+      "versioning": "semver"
     },
     {
       "matchPackagePatterns": ["^k8s.io", "^sigs.k8s.io"],
