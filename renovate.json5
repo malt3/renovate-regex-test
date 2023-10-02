@@ -39,6 +39,15 @@
       "prPriority": -30,
     },
     {
+      "matchPackagePatterns": ["^ghcr.io\/edgelesssys\/constellation\/.*"],
+      "groupName": "constellation dependencies",
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "enabled": true,
+    },
+    {
       "matchPackagePatterns": ["^k8s.io", "^sigs.k8s.io"],
       "groupName": "K8s dependencies",
     },
