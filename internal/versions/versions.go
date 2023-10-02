@@ -172,7 +172,7 @@ const (
 	// LogstashImage is the container image of logstash, used for log collection by debugd.
 	LogstashImage = "ghcr.io/edgelesssys/constellation/logstash-debugd:v2.12.0-pre.0.20230927141731-f4b2d0219467@sha256:552b7cfc0b5dc996a09731789d4e876df2cbb3d43d030d6f9ccb3a3f2b7067a5" // renovate:container
 	// FilebeatImage is the container image of filebeat, used for log collection by debugd.
-	FilebeatImage = "ghcr.io/edgelesssys/constellation/filebeat-debugd:v2.12.0-pre.0.20230927141731-f4b2d0219467@sha256:b768d696abe7cc38211de5c3b5540ed3987b586081a5e2f2e19897c866fdd4fb" // renovate:container
+	FilebeatImage = "ghcr.io/edgelesssys/constellation/filebeat-debugd:v2.11.0-pre.0.20230821060133-60bf770e62bc@sha256:89ea1925345922a5471f26de6bc2344a83a76f2f908a6f048230699f8b810114" // renovate:container
 	// MetricbeatImage is the container image of filebeat, used for log collection by debugd.
 	MetricbeatImage = "ghcr.io/edgelesssys/constellation/metricbeat-debugd:v2.12.0-pre.0.20230927141731-f4b2d0219467@sha256:fa10e6950e306a30d5fbe20c38c882b3f37933f0dd69fc2ccbbd3520e4a330bf" // renovate:container
 
