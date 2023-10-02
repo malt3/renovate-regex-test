@@ -147,7 +147,6 @@
     {
       "matchPackagePrefixes": ["ghcr.io/edgelesssys/"],
       "excludePackageNames": ["ghcr.io/edgelesssys/cloud-provider-gcp"],
-      "enabled": true,
       "versioning": "semver",
       "groupName": "Constellation containers",
       "prPriority": 20,
