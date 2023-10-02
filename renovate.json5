@@ -196,7 +196,6 @@
         " \"(?<depName>[^\"]*?):(?<currentValue>[^\"]*?)@(?<currentDigest>sha256:[a-f0-9]+)\"[^\\n]+\\/\\/ renovate:container",
       ],
       "datasourceTemplate": "docker",
-      "versioning": "semver"
     },
     {
       "fileMatch": ["(^|\\/)versions.go$"],
