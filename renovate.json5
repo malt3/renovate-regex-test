@@ -39,15 +39,6 @@
       "prPriority": -30,
     },
     {
-      "matchPackagePatterns": ["^ghcr.io\/edgelesssys\/constellation\/.*"],
-      "groupName": "constellation dependencies",
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "enabled": true,
-    },
-    {
       "matchPackagePatterns": ["^k8s.io", "^sigs.k8s.io"],
       "groupName": "K8s dependencies",
     },
@@ -156,6 +147,11 @@
     {
       "matchPackagePrefixes": ["ghcr.io/edgelesssys/"],
       "excludePackageNames": ["ghcr.io/edgelesssys/cloud-provider-gcp"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "enabled": true,
       "versioning": "semver",
       "groupName": "Constellation containers",
       "prPriority": 20,
