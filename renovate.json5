@@ -21,6 +21,12 @@
     "operators/constellation-node-operator/config/manager/kustomization.yaml",
   ],
   "ignoreDeps": ["github.com/edgelesssys/constellation/v2"],
+  "packageRules":[
+    {
+      "matchPackageNames": "ghcr.io/miampf/registry-test-image",
+      "versioning": "semver"
+    }
+  ]
 //   "packageRules": [
 //     {
 //       "matchManagers": ["gomod"],
