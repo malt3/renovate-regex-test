@@ -24,6 +24,7 @@
   "packageRules":[
     {
       "matchPackageNames": "ghcr.io/miampf/registry-test-image",
+      "ignoreUnstable": false,
       "versioning": "semver"
     }
   ]
