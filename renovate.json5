@@ -154,7 +154,8 @@
     },
     {
       "matchPackagePrefixes": ["ghcr.io/miampf/"],
-      "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<prerelease>-pre[^\\+]*)?(?<build>\\+.*)?$",
+      // "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)(?<prerelease>-pre[^\\+]*)?(?<build>\\+.*)?$",
+      "versioning": "semver",
       "ignoreUnstable": false,
       "groupName": "Miampf test packages",
       "prPriority": 20,
