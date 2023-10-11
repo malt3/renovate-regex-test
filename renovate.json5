@@ -12,4 +12,10 @@
   "addLabels": ["dependencies"],
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "prConcurrentLimit": 1,
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "versioning": "semver"
+    }
+  ]
 }
