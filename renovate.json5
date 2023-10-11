@@ -166,6 +166,12 @@
       "prPriority": 20,
     },
     {
+      "matchPackageNames": ["ghcr.io/miampf/registry-test-image"],
+      "versioning": "semver",
+      "groupName": "Miampf test package",
+      "ignoreUnstable": false,
+    },
+    {
       "matchPackageNames": [
         "registry.k8s.io/kas-network-proxy/proxy-agent",
         "registry.k8s.io/kas-network-proxy/proxy-server",
