@@ -161,9 +161,9 @@ const (
 	//
 
 	// KonnectivityAgentImage agent image for konnectivity service.
-	KonnectivityAgentImage = "registry.k8s.io/kas-network-proxy/proxy-agent:v0.1.2@sha256:cd3046d253d26ffb5907c625e0d0c2be05c5693c90e12116980851739fc0ead8" // renovate:container
+	KonnectivityAgentImage = "registry.k8s.io/kas-network-proxy/proxy-agent:v0.28.0@sha256:7406531b02155acc6873e9a482772f7409028c705be9f547cdb91d82a7735078" // renovate:container
 	// KonnectivityServerImage server image for konnectivity service.
-	KonnectivityServerImage = "registry.k8s.io/kas-network-proxy/proxy-server:v0.1.2@sha256:79933c3779bc30e33bb7509dff913e70f6ba78ad441f4827f0f3e840ce5f3ddb" // renovate:container
+	KonnectivityServerImage = "registry.k8s.io/kas-network-proxy/proxy-server:v0.28.0@sha256:60766102e5388196f87921b7c63ee4daa676679420a8e01fdcb8931622ae90ee" // renovate:container
 	// GcpGuestImage image for GCP guest agent.
 	// Check for new versions at https://github.com/GoogleCloudPlatform/guest-agent/releases and update in /.github/workflows/build-gcp-guest-agent.yml.
 	GcpGuestImage = "ghcr.io/edgelesssys/gcp-guest-agent:v20230811.0.0@sha256:c05d6273a1574af2564835a9cc989bed36ec3f76899f51908987263df5b0f231" // renovate:container
