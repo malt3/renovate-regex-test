@@ -12,6 +12,7 @@
   "addLabels": ["dependencies"],
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "prConcurrentLimit": 5,
+  "prHourlyLimit": 100,
   "packageRules": [
     {
       "matchDatasources": ["docker"],
