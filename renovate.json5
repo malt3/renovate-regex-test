@@ -12,7 +12,7 @@
   "addLabels": ["dependencies"],
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "prConcurrentLimit": 5,
-  "prHourlyLimit": 100,
+  "prHourlyLimit": 0,
   "branchConcurrentLimit": 0,
   "packageRules": [
     {
