@@ -13,6 +13,7 @@
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "prConcurrentLimit": 5,
   "prHourlyLimit": 100,
+  "branchConcurrentLimit": 0,
   "packageRules": [
     {
       "matchDatasources": ["docker"],
