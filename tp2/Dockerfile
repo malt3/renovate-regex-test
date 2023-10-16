@@ -1,1 +1,1 @@
-FROM ghcr.io/miampf/test-package-2:v0.2.0
+FROM renovate/renovate:37.7.1
