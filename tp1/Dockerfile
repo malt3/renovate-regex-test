@@ -1,1 +1,1 @@
-FROM ghcr.io/miampf/test-package-1:v0.2.0
+FROM ghcr.io/miampf/test-package-1:v0.4.0
