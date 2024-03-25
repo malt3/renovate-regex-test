@@ -1,1 +1,1 @@
-FROM registry.k8s.io/provider-aws/cloud-controller-manager:v1.27.0
+FROM registry.k8s.io/provider-aws/cloud-controller-manager:v1.27.5
